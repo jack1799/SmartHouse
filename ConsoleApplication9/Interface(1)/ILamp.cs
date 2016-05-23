@@ -7,6 +7,6 @@ namespace ConsoleApplication9
 {
     public interface ILight1 : IParam
     {
-        ILight light { get; set; }
+        ILight Light { get; set; }
     }
 }

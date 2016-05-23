@@ -8,16 +8,15 @@ namespace ConsoleApplication9
     public class TV : OnOff, IModes, IChannel1, IOnOff
     {
         public TV() { }
-        public TV(Boolean state, int mode, int channel, TVM m, Channel c)
+        public TV(Boolean state, int mode, int CurrentChannel, TVM Mode, Channel channel)
         {
             State = state;
-            Mode = m;
-            Channel = c;
-            Mode.CurrentMode = mode;
-
-            Channel.CurrentChannel = channel;
+            BlenderMode = Mode;
+            Channel = channel;
+            BlenderMode.CurrentMode = mode;
+            Channel.CurrentChannel = CurrentChannel;
         }
-        public IMode Mode { get; set; }
+        public IMode BlenderMode { get; set; }
         public IChannel Channel { get; set; }
 
         public void Set(int Argument)
@@ -34,7 +33,7 @@ namespace ConsoleApplication9
         }
         public Boolean SetMode(String Argument)
         {
-            return Mode.SetMode(Argument);
+            return BlenderMode.SetMode(Argument);
         }
     }
 }

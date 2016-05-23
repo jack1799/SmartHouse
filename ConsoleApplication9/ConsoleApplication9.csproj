@@ -58,7 +58,7 @@
     <Compile Include="Interface%281%29\IModes.cs" />
     <Compile Include="Interface%281%29\IParam.cs" />
     <Compile Include="Interface%282%29\Itemperaure.cs" />
-    <Compile Include="Devices\Kondicioner.cs" />
+    <Compile Include="Devices\Conditioner.cs" />
     <Compile Include="Devices\Lamp.cs" />
     <Compile Include="Components\Light.cs" />
     <Compile Include="Components\Mode.cs" />

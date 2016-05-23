@@ -8,23 +8,23 @@ namespace ConsoleApplication9
     public class Lamp : OnOff, ILight1, IOnOff
     {
         public Lamp() { }
-        public ILight light { get; set; }
-        public Lamp(Boolean state, Light l)
+        public ILight Light { get; set; }
+        public Lamp(Boolean state, Light light)
         {
             State = state;
-            light = l;
+           Light = light;
         }
         public void Plus()
         {
-            light.PlusLight();
+            Light.PlusLight();
         }
         public void Minus()
         {
-            light.MinusLight();
+            Light.MinusLight();
         }
         public void Set(int Argument)
         {
-            light.SetLight(Argument);
+            Light.SetLight(Argument);
         }
     }
 }

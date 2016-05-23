@@ -9,10 +9,10 @@ namespace ConsoleApplication9
     {
         public Conditioner() { }
         public ITemperature ConditionerTemp { get; set; }
-        public Conditioner(Boolean state, Temperature t)
+        public Conditioner(Boolean state, Temperature Temp)
         {
             State = state;
-            ConditionerTemp = t;
+            ConditionerTemp = Temp;
         }
         public void Plus()
         {

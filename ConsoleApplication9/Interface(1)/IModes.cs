@@ -7,7 +7,7 @@ namespace ConsoleApplication9
 {
     public interface IModes
     {
-        IMode Mode { get; set; }
+        IMode BlenderMode { get; set; }
 
         Boolean SetMode(String Argument);
     }

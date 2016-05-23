@@ -9,10 +9,10 @@ namespace ConsoleApplication9
     {
         public Heater() { }
         public ITemperature HeaterTemp { get; set; }
-        public Heater(Boolean state, Temperature t)
+        public Heater(Boolean state, Temperature Temp)
         {
             State = state;
-            HeaterTemp = t;
+            HeaterTemp = Temp;
         }
         public void Plus()
         {

@@ -134,7 +134,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((BlenderMode)Blender.Value.Mode.CurrentMode);
+                    Console.Write((BlenderMode)Blender.Value.BlenderMode.CurrentMode);
                     Console.WriteLine(" mode");
                 }
 
@@ -149,7 +149,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((TVMode)TV.Value.Mode.CurrentMode);
+                    Console.Write((TVMode)TV.Value.BlenderMode.CurrentMode);
                     Console.Write(" mode; channel ");
                     Console.WriteLine(TV.Value.Channel.CurrentChannel);
                 }

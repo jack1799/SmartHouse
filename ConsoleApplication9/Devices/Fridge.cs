@@ -9,10 +9,10 @@ namespace ConsoleApplication9
     {
         public ITemperature FridgeTemp { get; set; }
         public Fridge() { }
-        public Fridge(Boolean state, Temperature t)
+        public Fridge(Boolean state, Temperature Temp)
         {
             State = state;
-            FridgeTemp = t;
+            FridgeTemp = Temp;
         }
         public void Plus()
         {
