@@ -5,13 +5,12 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Blender : OnOff, IBlender
+    public class Blender : OnOff, IModes, IOnOff
     {
         public Blender() { }
-        public Blender(Boolean state, int mode)
+        public Blender(Boolean state, int mode, BlenderM m)
         {
             State = state;
-            BlenderM m = new BlenderM();
             Mode = m;
             Mode.CurrentMode = mode;
         }

@@ -5,14 +5,13 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Heater : OnOff, IHeater
+    public class Heater : OnOff, IHeater, IOnOff
     {
         public Heater() { }
         public ITemperature HeaterTemp { get; set; }
-        public Heater(Boolean state)
+        public Heater(Boolean state, Temperature t)
         {
             State = state;
-            Temperature t = new Temperature(12, 40, 20);
             HeaterTemp = t;
         }
         public void Plus()

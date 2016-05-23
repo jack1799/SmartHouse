@@ -43,33 +43,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Интерфейсы%281%29\IFridge.cs" />
-    <Compile Include="Устройства\Blender.cs" />
+    <Compile Include="Devices\Blender.cs" />
     <Compile Include="Enums\BlenderMode.cs" />
-    <Compile Include="Компоненты\Channel.cs" />
-    <Compile Include="Устройства\Heater.cs" />
-    <Compile Include="Устройства\Holodilnik.cs" />
-    <Compile Include="Интерфейсы%281%29\IBlender.cs" />
-    <Compile Include="Интерфейсы%281%29\IConditioner.cs" />
-    <Compile Include="Интерфейсы%281%29\IHeater.cs" />
-    <Compile Include="Интерфейсы%281%29\ILamp.cs" />
-    <Compile Include="Интерфейсы%282%29\ILight.cs" />
-    <Compile Include="Интерфейсы%282%29\IMode.cs" />
-    <Compile Include="Интерфейсы%281%29\IModes.cs" />
-    <Compile Include="Интерфейсы%281%29\IParam.cs" />
-    <Compile Include="Интерфейсы%282%29\Itemperaure.cs" />
-    <Compile Include="Интерфейсы%281%29\ITV.cs" />
-    <Compile Include="Устройства\Kondicioner.cs" />
-    <Compile Include="Устройства\Lamp.cs" />
-    <Compile Include="Компоненты\Light.cs" />
-    <Compile Include="Компоненты\Mode.cs" />
-    <Compile Include="Интерфейсы%282%29\Network.cs" />
-    <Compile Include="Устройства\OnOff.cs" />
+    <Compile Include="Components\Channel.cs" />
+    <Compile Include="Devices\Heater.cs" />
+    <Compile Include="Devices\Fridge.cs" />
+    <Compile Include="Interface%281%29\IChnnel.cs" />
+    <Compile Include="Interface%281%29\IConditioner.cs" />
+    <Compile Include="Interface%281%29\IFridge.cs" />
+    <Compile Include="Interface%281%29\IHeater.cs" />
+    <Compile Include="Interface%281%29\ILamp.cs" />
+    <Compile Include="Interface%282%29\ILight.cs" />
+    <Compile Include="Interface%282%29\IMode.cs" />
+    <Compile Include="Interface%281%29\IModes.cs" />
+    <Compile Include="Interface%281%29\IParam.cs" />
+    <Compile Include="Interface%282%29\Itemperaure.cs" />
+    <Compile Include="Devices\Kondicioner.cs" />
+    <Compile Include="Devices\Lamp.cs" />
+    <Compile Include="Components\Light.cs" />
+    <Compile Include="Components\Mode.cs" />
+    <Compile Include="Interface%282%29\Network.cs" />
+    <Compile Include="Devices\OnOff.cs" />
+    <Compile Include="Interface%281%29\ITemp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Устройства\SmartTV.cs" />
-    <Compile Include="Компоненты\Temperature.cs" />
-    <Compile Include="Компоненты\TVM.cs" />
+    <Compile Include="Devices\SmartTV.cs" />
+    <Compile Include="Components\Temperature.cs" />
+    <Compile Include="Components\TVM.cs" />
     <Compile Include="Enums\TVMode.cs" />
   </ItemGroup>
   <ItemGroup>

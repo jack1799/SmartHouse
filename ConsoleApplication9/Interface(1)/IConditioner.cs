@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ITV : IOnOff, IParam, IModes
+    public interface IConditioner : ITemp
     {
-        IChannel Channel { get; set; }
+        ITemperature ConditionerTemp { get; set; }
     }
 }

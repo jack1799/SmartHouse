@@ -5,14 +5,12 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class TV : OnOff, ITV
+    public class TV : OnOff, IModes, IChannel1, IOnOff
     {
         public TV() { }
-        public TV(Boolean state, int mode, int channel)
+        public TV(Boolean state, int mode, int channel, TVM m, Channel c)
         {
             State = state;
-            TVM m = new TVM();
-            Channel c = new Channel();
             Mode = m;
             Channel = c;
             Mode.CurrentMode = mode;

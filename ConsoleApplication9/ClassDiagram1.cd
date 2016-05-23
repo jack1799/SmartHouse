@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
   <Class Name="ConsoleApplication9.Lamp" Collapsed="true">
-    <Position X="0.5" Y="3.5" Width="1.25" />
+    <Position X="0.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAIAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Устройства\Lamp.cs</FileName>
+      <FileName>Devices\Lamp.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.21" />
   </Class>
   <Class Name="ConsoleApplication9.Conditioner" Collapsed="true">
-    <Position X="5" Y="3.5" Width="1.25" />
+    <Position X="5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABQAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Устройства\Kondicioner.cs</FileName>
+      <FileName>Devices\Kondicioner.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.158" />
   </Class>
   <Class Name="ConsoleApplication9.Fridge" Collapsed="true">
-    <Position X="2" Y="3.5" Width="1.25" />
+    <Position X="2" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAABAAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Устройства\Holodilnik.cs</FileName>
+      <FileName>Devices\Fridge.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.169" />
   </Class>
   <Class Name="ConsoleApplication9.TV" Collapsed="true">
-    <Position X="8" Y="3.5" Width="1.25" />
+    <Position X="8" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAIAABgAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Устройства\SmartTV.cs</FileName>
+      <FileName>Devices\SmartTV.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.231" />
   </Class>
   <Class Name="ConsoleApplication9.Heater" Collapsed="true">
-    <Position X="3.5" Y="3.5" Width="1.25" />
+    <Position X="3.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAAAAAACCAAAAAAAAA=</HashCode>
-      <FileName>Устройства\Heater.cs</FileName>
+      <FileName>Devices\Heater.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.293" />
   </Class>
   <Class Name="ConsoleApplication9.BlenderM" Collapsed="true">
-    <Position X="6.5" Y="5.5" Width="1.25" />
+    <Position X="6.5" Y="6.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Компоненты\Mode.cs</FileName>
+      <FileName>Components\Mode.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.198" />
   </Class>
   <Class Name="ConsoleApplication9.OnOff" Collapsed="true">
-    <Position X="4.25" Y="2.5" Width="1.25" />
+    <Position X="4.25" Y="3.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIA=</HashCode>
-      <FileName>Устройства\OnOff.cs</FileName>
+      <FileName>Devices\OnOff.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Left" Position="0.1" />
   </Class>
@@ -64,169 +64,134 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleApplication9.Light" Collapsed="true">
-    <Position X="0.5" Y="5.5" Width="1.25" />
+    <Position X="0.5" Y="6.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAIAIAABAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAE=</HashCode>
-      <FileName>Компоненты\Light.cs</FileName>
+      <FileName>Components\Light.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.107" />
   </Class>
   <Class Name="ConsoleApplication9.Temperature" Collapsed="true">
-    <Position X="3.5" Y="5.5" Width="1.25" />
+    <Position X="3.5" Y="6.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAgQAIAAAAAAwAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Компоненты\Temperature.cs</FileName>
+      <FileName>Components\Temperature.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.138" />
   </Class>
   <Class Name="ConsoleApplication9.Channel" Collapsed="true">
-    <Position X="9.5" Y="5.5" Width="1.25" />
+    <Position X="9.5" Y="6.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>ASAAAAAAAAAIACABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
-      <FileName>Компоненты\Channel.cs</FileName>
+      <FileName>Components\Channel.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.231" />
   </Class>
   <Class Name="ConsoleApplication9.TVM" Collapsed="true">
-    <Position X="8" Y="5.5" Width="1.25" />
+    <Position X="8" Y="6.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Компоненты\TVM.cs</FileName>
+      <FileName>Components\TVM.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.179" />
   </Class>
   <Class Name="ConsoleApplication9.Blender" Collapsed="true">
-    <Position X="6.5" Y="3.5" Width="1.25" />
+    <Position X="6.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Устройства\Blender.cs</FileName>
+      <FileName>Devices\Blender.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.221" />
   </Class>
   <Interface Name="ConsoleApplication9.IOnOff" Collapsed="true">
-    <Position X="5" Y="0.5" Width="1.25" />
+    <Position X="5.25" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIA=</HashCode>
-      <FileName>Устройства\OnOff.cs</FileName>
+      <FileName>Devices\OnOff.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IMode" Collapsed="true">
-    <Position X="7.25" Y="4.75" Width="1.25" />
+    <Position X="7.25" Y="6" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(2)\IMode.cs</FileName>
+      <FileName>Interface(2)\IMode.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.ITemperature" Collapsed="true">
-    <Position X="3.5" Y="4.75" Width="1.25" />
+    <Position X="3.5" Y="6" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAgQAIAAAAAAwAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(2)\Itemperaure.cs</FileName>
+      <FileName>Interface(2)\Itemperaure.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IChannel" Collapsed="true">
-    <Position X="9.5" Y="4.75" Width="1.25" />
+    <Position X="9.5" Y="6" Width="1.25" />
     <TypeIdentifier>
       <HashCode>ASAAAAAAAAAIACABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
-      <FileName>Интерфейсы(2)\Network.cs</FileName>
+      <FileName>Interface(2)\Network.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.ILight" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.25" />
+    <Position X="0.5" Y="6" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAIAIAABAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAE=</HashCode>
-      <FileName>Интерфейсы(2)\ILight.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.ILamp" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\ILamp.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.IFridge" Collapsed="true">
-    <Position X="2" Y="1.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IFridge.cs</FileName>
-      <NewMemberFileName>IFridge.cs</NewMemberFileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.IHeater" Collapsed="true">
-    <Position X="3.5" Y="1.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IHeater.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.IConditioner" Collapsed="true">
-    <Position X="5" Y="1.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IConditioner.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.IBlender" Collapsed="true">
-    <Position X="6.5" Y="1.5" Width="1.25" />
-    <InheritanceLine Type="ConsoleApplication9.IModes" ManuallyRouted="true">
-      <Path>
-        <Point X="7.875" Y="1.062" />
-        <Point X="7.875" Y="1.26" />
-        <Point X="7.125" Y="1.26" />
-        <Point X="7.125" Y="1.5" />
-      </Path>
-    </InheritanceLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IBlender.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleApplication9.ITV" Collapsed="true">
-    <Position X="8" Y="1.5" Width="1.25" />
-    <InheritanceLine Type="ConsoleApplication9.IOnOff" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="5.625" Y="1.062" />
-        <Point X="5.625" Y="1.26" />
-        <Point X="8.625" Y="1.26" />
-        <Point X="8.625" Y="1.5" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="ConsoleApplication9.IParam" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="2.625" Y="1.062" />
-        <Point X="2.625" Y="1.26" />
-        <Point X="5.542" Y="1.26" Type="JumpStart" />
-        <Point X="5.708" Y="1.26" Type="JumpEnd" />
-        <Point X="8.625" Y="1.26" />
-        <Point X="8.625" Y="1.5" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="ConsoleApplication9.IModes" ManuallyRouted="true">
-      <Path>
-        <Point X="7.875" Y="1.062" />
-        <Point X="7.875" Y="1.285" />
-        <Point X="8.625" Y="1.285" />
-        <Point X="8.625" Y="1.5" />
-      </Path>
-    </InheritanceLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\ITV.cs</FileName>
+      <FileName>Interface(2)\ILight.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IParam" Collapsed="true">
-    <Position X="2" Y="0.5" Width="1.25" />
+    <Position X="3.5" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IParam.cs</FileName>
+      <FileName>Interface(1)\IParam.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IModes" Collapsed="true">
-    <Position X="7.25" Y="0.5" Width="1.25" />
+    <Position X="6.75" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Интерфейсы(1)\IModes.cs</FileName>
+      <FileName>Interface(1)\IModes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.ILight1" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\ILamp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.ITemp" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\ITemp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.IFridge" Collapsed="true">
+    <Position X="2" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\IFridge.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.IHeater" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\IHeater.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.IConditioner" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\IConditioner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConsoleApplication9.IChannel1" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface(1)\IChnnel.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ConsoleApplication9.BlenderMode">

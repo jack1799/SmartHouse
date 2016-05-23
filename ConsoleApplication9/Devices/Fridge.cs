@@ -5,27 +5,26 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Lamp : OnOff, ILamp
+    public class Fridge : OnOff, IFridge, IOnOff
     {
-        public Lamp() { }
-        public ILight light { get; set; }
-        public Lamp(Boolean state)
+        public ITemperature FridgeTemp { get; set; }
+        public Fridge() { }
+        public Fridge(Boolean state, Temperature t)
         {
             State = state;
-            Light l = new Light(0, 100, 50);
-            light = l;
+            FridgeTemp = t;
         }
         public void Plus()
         {
-            light.PlusLight();
+            FridgeTemp.PlusTemp();
         }
         public void Minus()
         {
-            light.MinusLight();
+            FridgeTemp.MinusTemp();
         }
         public void Set(int Argument)
         {
-            light.SetLight(Argument);
+            FridgeTemp.SetTemp(Argument);
         }
     }
 }

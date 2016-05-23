@@ -5,14 +5,13 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Conditioner : OnOff, IConditioner
+    public class Conditioner : OnOff, IConditioner, IOnOff
     {
         public Conditioner() { }
         public ITemperature ConditionerTemp { get; set; }
-        public Conditioner(Boolean state)
+        public Conditioner(Boolean state, Temperature t)
         {
             State = state;
-            Temperature t = new Temperature(12, 40, 20);
             ConditionerTemp = t;
         }
         public void Plus()

@@ -51,12 +51,19 @@ namespace ConsoleApplication9
             IDictionary<string, Blender> BlenderDictionary = new Dictionary<string, Blender>();
             IDictionary<string, TV> TVDictionary = new Dictionary<string, TV>();
 
-            LampDictionary.Add("1", new Lamp(false));
-            FridgeDictionary.Add("2", new Fridge(false));
-            HeaterDictionary.Add("3", new Heater(false));
-            ConditionerDictionary.Add("4", new Conditioner(false));
-            BlenderDictionary.Add("5", new Blender(false, 1));
-            TVDictionary.Add("6", new TV(false, 1, 1));
+            Light l1 = new Light(0, 100, 50);
+            LampDictionary.Add("1", new Lamp(false, l1));
+            Temperature tf1 = new Temperature(-12, -1, -4);
+            FridgeDictionary.Add("2", new Fridge(false, tf1));
+            Temperature th1 = new Temperature(12, 40, 20);
+            HeaterDictionary.Add("3", new Heater(false,th1));
+            Temperature tc1 = new Temperature(12, 40, 20);
+            ConditionerDictionary.Add("4", new Conditioner(false,tc1));
+            BlenderM m1 = new BlenderM();
+            BlenderDictionary.Add("5", new Blender(false, 1,m1));
+            TVM tv1 = new TVM();
+            Channel c1 = new Channel();
+            TVDictionary.Add("6", new TV(false, 1, 1, tv1, c1));
 
             while (true)
             {
@@ -162,7 +169,8 @@ namespace ConsoleApplication9
                     case "lamp":
                         if (commands[0].ToLower() == "add" && !LampDictionary.ContainsKey(commands[2]))
                         {
-                            LampDictionary.Add(commands[2], new Lamp(false));
+                            Light l = new Light(0, 100, 50);
+                            LampDictionary.Add(commands[2], new Lamp(false, l));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && LampDictionary.ContainsKey(commands[2]))
@@ -210,7 +218,8 @@ namespace ConsoleApplication9
                     case "fridge":
                         if (commands[0].ToLower() == "add" && !FridgeDictionary.ContainsKey(commands[2]))
                         {
-                            FridgeDictionary.Add(commands[2], new Fridge(false));
+                            Temperature t = new Temperature(-12, -1, -4);
+                            FridgeDictionary.Add(commands[2], new Fridge(false, t));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && FridgeDictionary.ContainsKey(commands[2]))
@@ -258,7 +267,8 @@ namespace ConsoleApplication9
                     case "heater":
                         if (commands[0].ToLower() == "add" && !HeaterDictionary.ContainsKey(commands[2]))
                         {
-                            HeaterDictionary.Add(commands[2], new Heater(false));
+                            Temperature t = new Temperature(12, 40, 20);
+                            HeaterDictionary.Add(commands[2], new Heater(false,t));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && HeaterDictionary.ContainsKey(commands[2]))
@@ -306,7 +316,8 @@ namespace ConsoleApplication9
                     case "conditioner":
                         if (commands[0].ToLower() == "add" && !ConditionerDictionary.ContainsKey(commands[2]))
                         {
-                            ConditionerDictionary.Add(commands[2], new Conditioner(false));
+                            Temperature t = new Temperature(12, 40, 20);
+                            ConditionerDictionary.Add(commands[2], new Conditioner(false,t));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && ConditionerDictionary.ContainsKey(commands[2]))
@@ -354,7 +365,8 @@ namespace ConsoleApplication9
                     case "blender":
                         if (commands[0].ToLower() == "add" && !BlenderDictionary.ContainsKey(commands[2]))
                         {
-                            BlenderDictionary.Add(commands[2], new Blender(false, 1));
+                            BlenderM m = new BlenderM();
+                            BlenderDictionary.Add(commands[2], new Blender(false, 1,m));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && BlenderDictionary.ContainsKey(commands[2]))
@@ -392,7 +404,9 @@ namespace ConsoleApplication9
                     case "tv":
                         if (commands[0].ToLower() == "add" && !TVDictionary.ContainsKey(commands[2]))
                         {
-                            TVDictionary.Add(commands[2], new TV(false, 1, 1));
+                            TVM tv = new TVM();
+                            Channel c = new Channel();
+                            TVDictionary.Add(commands[2], new TV(false, 1, 1, tv, c));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && TVDictionary.ContainsKey(commands[2]))

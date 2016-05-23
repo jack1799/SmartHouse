@@ -5,7 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IBlender : IOnOff, IModes
+    public interface IChannel1 : IParam
     {
+        IChannel Channel { get; set; }
     }
 }
