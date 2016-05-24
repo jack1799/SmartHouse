@@ -28,7 +28,7 @@
     <Position X="8" Y="3" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAABgAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Devices\SmartTV.cs</FileName>
+      <FileName>Devices\TV.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.231" />
   </Class>
@@ -39,14 +39,6 @@
       <FileName>Devices\Heater.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.293" />
-  </Class>
-  <Class Name="ConsoleApplication9.BlenderM" Collapsed="true">
-    <Position X="6.5" Y="5.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Components\Mode.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Orientation="Bottom" Position="0.198" />
   </Class>
   <Class Name="ConsoleApplication9.OnOff" Collapsed="true">
     <Position X="4.25" Y="2" Width="1.25" />
@@ -64,7 +56,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleApplication9.Light" Collapsed="true">
-    <Position X="0.5" Y="5.5" Width="1.25" />
+    <Position X="0.5" Y="5.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAIAIAABAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAE=</HashCode>
       <FileName>Components\Light.cs</FileName>
@@ -72,7 +64,7 @@
     <Lollipop Orientation="Bottom" Position="0.107" />
   </Class>
   <Class Name="ConsoleApplication9.Temperature" Collapsed="true">
-    <Position X="3.5" Y="5.5" Width="1.25" />
+    <Position X="3.5" Y="5.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAgQAIAAAAAAwAAAAAAAAAAAAAA=</HashCode>
       <FileName>Components\Temperature.cs</FileName>
@@ -80,18 +72,18 @@
     <Lollipop Orientation="Bottom" Position="0.138" />
   </Class>
   <Class Name="ConsoleApplication9.Channel" Collapsed="true">
-    <Position X="9.5" Y="5.5" Width="1.25" />
+    <Position X="9.5" Y="5.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>ASAAAAAAAAAIACABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Components\Channel.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.231" />
   </Class>
-  <Class Name="ConsoleApplication9.TVM" Collapsed="true">
-    <Position X="8" Y="5.5" Width="1.25" />
+  <Class Name="ConsoleApplication9.TVMode" Collapsed="true">
+    <Position X="8" Y="5.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Components\TVM.cs</FileName>
+      <FileName>Components\TVMode.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.179" />
   </Class>
@@ -110,36 +102,29 @@
       <FileName>Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="ConsoleApplication9.IOnOff" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIA=</HashCode>
-      <FileName>Devices\OnOff.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="ConsoleApplication9.IMode" Collapsed="true">
-    <Position X="7.25" Y="4.75" Width="1.25" />
+    <Position X="7.25" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interface(2)\IMode.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.ITemperature" Collapsed="true">
-    <Position X="3.5" Y="4.75" Width="1.25" />
+    <Position X="3.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAgQAIAAAAAAwAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface(2)\Itemperaure.cs</FileName>
+      <FileName>Interface(2)\ITemperature.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IChannel" Collapsed="true">
-    <Position X="9.5" Y="4.75" Width="1.25" />
+    <Position X="9.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>ASAAAAAAAAAIACABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
-      <FileName>Interface(2)\Network.cs</FileName>
+      <FileName>Interface(2)\IChannel.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.ILight" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.25" />
+    <Position X="0.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAIAIAABAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAE=</HashCode>
       <FileName>Interface(2)\ILight.cs</FileName>
@@ -177,21 +162,28 @@
     <Position X="3.5" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interface(1)\IChannel.cs</FileName>
+      <FileName>Interface(1)\IChannel1.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="ConsoleApplication9.BlenderMode">
+  <Interface Name="ConsoleApplication9.IOnOff" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIA=</HashCode>
+      <FileName>Interface(1)\IOnOff.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ConsoleApplication9.BlenderModes">
     <Position X="11.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Enums\BlenderMode.cs</FileName>
+      <FileName>Enums\BlenderModes.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="ConsoleApplication9.TVMode">
+  <Enum Name="ConsoleApplication9.TVModes">
     <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Enums\TVMode.cs</FileName>
+      <FileName>Enums\TVModes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

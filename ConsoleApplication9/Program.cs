@@ -129,7 +129,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((BlenderMode)Blender.Value.BlenderMode.CurrentMode);
+                    Console.Write((BlenderModes)Blender.Value.BlenderMode.CurrentMode);
                     Console.WriteLine(" mode");
                 }
 

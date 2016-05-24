@@ -43,32 +43,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface%281%29\IOnOff.cs" />
     <Compile Include="Devices\Blender.cs" />
-    <Compile Include="Enums\BlenderMode.cs" />
+    <Compile Include="Enums\BlenderModes.cs" />
     <Compile Include="Components\Channel.cs" />
     <Compile Include="Devices\Heater.cs" />
     <Compile Include="Devices\Fridge.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="Interface%281%29\IChannel.cs" />
+    <Compile Include="Interface%281%29\IChannel1.cs" />
     <Compile Include="Interface%281%29\ILight1.cs" />
     <Compile Include="Interface%282%29\ILight.cs" />
     <Compile Include="Interface%282%29\IMode.cs" />
     <Compile Include="Interface%281%29\IModes.cs" />
     <Compile Include="Interface%281%29\IParam.cs" />
-    <Compile Include="Interface%282%29\Itemperaure.cs" />
+    <Compile Include="Interface%282%29\ITemperature.cs" />
     <Compile Include="Devices\Conditioner.cs" />
     <Compile Include="Devices\Lamp.cs" />
     <Compile Include="Components\Light.cs" />
-    <Compile Include="Components\Mode.cs" />
-    <Compile Include="Interface%282%29\Network.cs" />
+    <Compile Include="Components\BlenderMode.cs" />
+    <Compile Include="Interface%282%29\IChannel.cs" />
     <Compile Include="Devices\OnOff.cs" />
     <Compile Include="Interface%281%29\ITemp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Devices\SmartTV.cs" />
+    <Compile Include="Devices\TV.cs" />
     <Compile Include="Components\Temperature.cs" />
-    <Compile Include="Components\TVM.cs" />
-    <Compile Include="Enums\TVMode.cs" />
+    <Compile Include="Components\TVMode.cs" />
+    <Compile Include="Enums\TVModes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

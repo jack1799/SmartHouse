@@ -5,10 +5,10 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class BlenderM : IMode
+    public class TVMode : IMode
     {
-        public BlenderM() { }
-        public BlenderM(int mode)
+        public TVMode() { }
+        public TVMode(int mode)
         {
             CurrentMode = mode;
         }
@@ -20,8 +20,11 @@ namespace ConsoleApplication9
                 case "normal":
                     CurrentMode = 1;
                     return false;
-                case "super":
+                case "intensified":
                     CurrentMode = 2;
+                    return false;
+                case "super":
+                    CurrentMode = 3;
                     return false;
                 default:
                     return true;

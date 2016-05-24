@@ -8,7 +8,7 @@ namespace ConsoleApplication9
     public class Blender : OnOff, IModes, IOnOff
     {
         public Blender() { }
-        public Blender(bool state, int mode, BlenderM Mode)
+        public Blender(bool state, int mode, BlenderMode Mode)
         {
             State = state;
             BlenderMode = Mode;

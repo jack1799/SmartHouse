@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public enum TVMode
+    public enum TVModes
     {
         Normal = 1,
         Intensified,

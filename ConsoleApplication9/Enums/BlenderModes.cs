@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public enum BlenderMode
+    public enum BlenderModes
     {
         Normal = 1,
         Super

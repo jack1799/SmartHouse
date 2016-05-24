@@ -29,12 +29,12 @@ namespace ConsoleApplication9
 
         public virtual Blender CreateBlender()
         {
-            return new Blender(false, 1, new BlenderM());
+            return new Blender(false, 1, new BlenderMode());
         }
 
         public virtual TV CreateTV()
         {
-            return new TV(false, 1, 1, new TVM(), new Channel());
+            return new TV(false, 1, 1, new TVMode(), new Channel());
         }
     }
 }

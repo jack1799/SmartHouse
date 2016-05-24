@@ -5,14 +5,6 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IOnOff
-    {
-        Boolean State { get; set; }
-
-        void On();
-        void Off();
-    }
-
     public abstract class OnOff : IOnOff
     {
         public bool State { get; set; }
