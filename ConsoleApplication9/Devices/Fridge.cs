@@ -5,26 +5,26 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Fridge : OnOff, IFridge, IOnOff
+    public class Fridge : OnOff, IOnOff, IParam, ITemp, ISet
     {
-        public ITemperature FridgeTemp { get; set; }
+        public ITemperature Temp { get; set; }
         public Fridge() { }
         public Fridge(Boolean state, Temperature Temp)
         {
             State = state;
-            FridgeTemp = Temp;
+            this.Temp = Temp;
         }
         public void Plus()
         {
-            FridgeTemp.PlusTemp();
+            Temp.PlusTemp();
         }
         public void Minus()
         {
-            FridgeTemp.MinusTemp();
+            Temp.MinusTemp();
         }
         public void Set(int Argument)
         {
-            FridgeTemp.SetTemp(Argument);
+            Temp.SetTemp(Argument);
         }
     }
 }

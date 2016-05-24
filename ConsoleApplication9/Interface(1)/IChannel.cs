@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IHeater : ITemp
+    public interface IChannel1
     {
-        ITemperature HeaterTemp { get; set; }
+        IChannel Channel { get; set; }
     }
 }

@@ -79,7 +79,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.WriteLine("bright " + Lamp.Value.light.CurrentLight);
+                    Console.WriteLine("bright " + Lamp.Value.Light.CurrentLight);
                 }
                 foreach (var Fridge in FridgeDictionary)
                 {
@@ -92,7 +92,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.WriteLine("temp " + Fridge.Value.FridgeTemp.CurrentTemp);
+                    Console.WriteLine("temp " + Fridge.Value.Temp.CurrentTemp);
                 }
 
                 foreach (var Heater in HeaterDictionary)
@@ -106,7 +106,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.WriteLine("temp " + Heater.Value.HeaterTemp.CurrentTemp);
+                    Console.WriteLine("temp " + Heater.Value.Temp.CurrentTemp);
                 }
 
                 foreach (var Conditioner in ConditionerDictionary)
@@ -120,7 +120,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.WriteLine("temp " + Conditioner.Value.ConditionerTemp.CurrentTemp);
+                    Console.WriteLine("temp " + Conditioner.Value.Temp.CurrentTemp);
                 }
 
                 foreach (var Blender in BlenderDictionary)

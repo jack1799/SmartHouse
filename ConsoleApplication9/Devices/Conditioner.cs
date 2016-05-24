@@ -5,26 +5,26 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Conditioner : OnOff, IConditioner, IOnOff
+    public class Conditioner : OnOff, IOnOff, IParam, ITemp, ISet
     {
         public Conditioner() { }
-        public ITemperature ConditionerTemp { get; set; }
+        public ITemperature Temp { get; set; }
         public Conditioner(Boolean state, Temperature Temp)
         {
             State = state;
-            ConditionerTemp = Temp;
+            this.Temp = Temp;
         }
         public void Plus()
         {
-            ConditionerTemp.PlusTemp();
+            Temp.PlusTemp();
         }
         public void Minus()
         {
-            ConditionerTemp.MinusTemp();
+            Temp.MinusTemp();
         }
         public void Set(int Argument)
         {
-            ConditionerTemp.SetTemp(Argument);
+            Temp.SetTemp(Argument);
         }
     }
 }

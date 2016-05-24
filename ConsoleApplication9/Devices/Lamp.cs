@@ -5,14 +5,14 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Lamp : OnOff, ILight1, IOnOff
+    public class Lamp : OnOff, ILight1, IOnOff, IParam, ISet
     {
         public Lamp() { }
         public ILight Light { get; set; }
         public Lamp(Boolean state, Light light)
         {
             State = state;
-           Light = light;
+            Light = light;
         }
         public void Plus()
         {

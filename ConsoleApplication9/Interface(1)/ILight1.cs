@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IConditioner : ITemp
+    public interface ILight1
     {
-        ITemperature ConditionerTemp { get; set; }
+        ILight Light { get; set; }
     }
 }

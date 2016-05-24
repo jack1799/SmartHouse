@@ -5,26 +5,26 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Heater : OnOff, IHeater, IOnOff
+    public class Heater : OnOff, IOnOff, IParam, ITemp, ISet
     {
         public Heater() { }
-        public ITemperature HeaterTemp { get; set; }
+        public ITemperature Temp { get; set; }
         public Heater(Boolean state, Temperature Temp)
         {
             State = state;
-            HeaterTemp = Temp;
+            this.Temp = Temp;
         }
         public void Plus()
         {
-            HeaterTemp.PlusTemp();
+            Temp.PlusTemp();
         }
         public void Minus()
         {
-            HeaterTemp.MinusTemp();
+            Temp.MinusTemp();
         }
         public void Set(int Argument)
         {
-            HeaterTemp.SetTemp(Argument);
+            Temp.SetTemp(Argument);
         }
     }
 }
