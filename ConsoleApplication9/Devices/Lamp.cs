@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Lamp : OnOff, ILight1, IOnOff, IParam, ISet
+    public class Lamp : OnOff, ILight1, IOnOff
     {
         public Lamp() { }
         public ILight Light { get; set; }

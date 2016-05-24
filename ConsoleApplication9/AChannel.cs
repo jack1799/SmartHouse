@@ -5,8 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ISet
+    public abstract class AChannel : IChannel1
     {
-        void Set(int Argument);
     }
 }

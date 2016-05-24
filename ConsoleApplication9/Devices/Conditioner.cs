@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class Conditioner : OnOff, IOnOff, IParam, ITemp, ISet
+    public class Conditioner : OnOff, IOnOff, ITemp
     {
         public Conditioner() { }
         public ITemperature Temp { get; set; }

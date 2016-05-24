@@ -9,5 +9,6 @@ namespace ConsoleApplication9
     {
         void Minus();
         void Plus();
+        void Set(int Argument);
     }
 }

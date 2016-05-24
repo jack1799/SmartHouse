@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IChannel1
+    public interface IChannel1 : IParam
     {
         IChannel Channel { get; set; }
     }

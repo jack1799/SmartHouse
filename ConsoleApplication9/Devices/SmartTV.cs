@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public class TV : OnOff, IModes, IChannel1, IOnOff, IParam, ISet
+    public class TV : OnOff, IModes, IChannel1, IOnOff
     {
         public TV() { }
         public TV(Boolean state, int mode, int CurrentChannel, TVM Mode, Channel channel)
