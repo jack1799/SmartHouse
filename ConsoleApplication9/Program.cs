@@ -144,7 +144,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((TVMode)TV.Value.BlenderMode.CurrentMode);
+                    Console.Write((TVModes)TV.Value.BlenderMode.CurrentMode);
                     Console.Write(" mode; channel ");
                     Console.WriteLine(TV.Value.Channel.CurrentChannel);
                 }
