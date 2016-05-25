@@ -97,14 +97,14 @@ namespace ConsoleApplication9
                 }
             }
         }
-        catch
+        catch (Exception)
         {
-            LampDictionary.Add("1", factory.CreateLamp(false, 0, 100, 50));
-            FridgeDictionary.Add("2", factory.CreateFridge(false, -12, -1, -4));
-            HeaterDictionary.Add("3", factory.CreateHeater(false, 12, 40, 20));
-            ConditionerDictionary.Add("4", factory.CreateConditioner(false, 12, 40, 20));
-            BlenderDictionary.Add("5", factory.CreateBlender(false, 1));
-            TVDictionary.Add("6", factory.CreateTV(false, 1, 0, 100, 1));
+                    LampDictionary.Add("1", factory.CreateLamp(false, 0, 100, 50));
+                    FridgeDictionary.Add("2", factory.CreateFridge(false, -12, -1, -4));
+                    HeaterDictionary.Add("3", factory.CreateHeater(false, 12, 40, 20));
+                    ConditionerDictionary.Add("4", factory.CreateConditioner(false, 12, 40, 20));
+                    BlenderDictionary.Add("5", factory.CreateBlender(false, 1));
+                    TVDictionary.Add("6", factory.CreateTV(false, 1, 0, 100, 1));
         }
             while (true)
             {
