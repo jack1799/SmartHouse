@@ -198,15 +198,31 @@ namespace ConsoleApplication9
                 string[] commands = Console.ReadLine().Split(' ');
                 if (commands[0].ToLower() == "exit" & commands.Length == 1)
                 {
-                    using (FileStream fs = new FileStream("SmartHouse.dat", FileMode.OpenOrCreate))
+                    try
                     {
-                        BinaryFormatter bf = new BinaryFormatter();
-                        bf.Serialize(fs, LampDictionary);
-                        bf.Serialize(fs, FridgeDictionary);
-                        bf.Serialize(fs, HeaterDictionary);
-                        bf.Serialize(fs, ConditionerDictionary);
-                        bf.Serialize(fs, BlenderDictionary);
-                        bf.Serialize(fs, TVDictionary);
+                        using (FileStream fs = new FileStream("SmartHouse.dat", FileMode.Truncate))
+                        {
+                            BinaryFormatter bf = new BinaryFormatter();
+                            bf.Serialize(fs, LampDictionary);
+                            bf.Serialize(fs, FridgeDictionary);
+                            bf.Serialize(fs, HeaterDictionary);
+                            bf.Serialize(fs, ConditionerDictionary);
+                            bf.Serialize(fs, BlenderDictionary);
+                            bf.Serialize(fs, TVDictionary);
+                        }
+                    }
+                    catch
+                    {
+                        using (FileStream fs = new FileStream("SmartHouse.dat", FileMode.OpenOrCreate))
+                        {
+                            BinaryFormatter bf = new BinaryFormatter();
+                            bf.Serialize(fs, LampDictionary);
+                            bf.Serialize(fs, FridgeDictionary);
+                            bf.Serialize(fs, HeaterDictionary);
+                            bf.Serialize(fs, ConditionerDictionary);
+                            bf.Serialize(fs, BlenderDictionary);
+                            bf.Serialize(fs, TVDictionary);
+                        }
                     }
                     return;
                 }
