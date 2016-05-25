@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public abstract class OnOff : IOnOff
     {
         public bool State { get; set; }

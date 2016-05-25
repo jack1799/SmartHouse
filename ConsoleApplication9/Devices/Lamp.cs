@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Lamp : OnOff, ILight1, IOnOff
     {
         public Lamp() { }

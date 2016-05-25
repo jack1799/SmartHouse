@@ -5,18 +5,17 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class TV : OnOff, IModes, IChannel1, IOnOff
     {
         public TV() { }
-        public TV(Boolean state, int mode, int CurrentChannel, TVMode Mode, Channel channel)
+        public TV(Boolean state, TVMode Mode, Channel channel)
         {
             State = state;
-            BlenderMode = Mode;
+            this.Mode = Mode;
             Channel = channel;
-            BlenderMode.CurrentMode = mode;
-            Channel.CurrentChannel = CurrentChannel;
         }
-        public IMode BlenderMode { get; set; }
+        public IMode Mode { get; set; }
         public IChannel Channel { get; set; }
 
         public void Set(int Argument)
@@ -33,7 +32,7 @@ namespace ConsoleApplication9
         }
         public Boolean SetMode(String Argument)
         {
-            return BlenderMode.SetMode(Argument);
+            return Mode.SetMode(Argument);
         }
     }
 }

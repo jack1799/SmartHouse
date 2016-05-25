@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Heater : OnOff, IOnOff, ITemp
     {
         public Heater() { }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -44,7 +46,7 @@ namespace ConsoleApplication9
         }
         static void Main(string[] args)
         {
-            Factory factory = new Factory(); 
+            Factory factory = new Factory();
 
             IDictionary<string, Lamp> LampDictionary = new Dictionary<string, Lamp>();
             IDictionary<string, Fridge> FridgeDictionary = new Dictionary<string, Fridge>();
@@ -52,14 +54,58 @@ namespace ConsoleApplication9
             IDictionary<string, Conditioner> ConditionerDictionary = new Dictionary<string, Conditioner>();
             IDictionary<string, Blender> BlenderDictionary = new Dictionary<string, Blender>();
             IDictionary<string, TV> TVDictionary = new Dictionary<string, TV>();
+            try
+            { 
+            BinaryFormatter bf = new BinaryFormatter();
+            using (FileStream fs = new FileStream("SmartHouse.dat", FileMode.Open))
+            {
+                Dictionary<string, Lamp> LDictionary = (Dictionary<string, Lamp>)bf.Deserialize(fs);
+                Dictionary<string, Fridge> FDictionary = (Dictionary<string, Fridge>)bf.Deserialize(fs);
+                Dictionary<string, Heater> HDictionary = (Dictionary<string, Heater>)bf.Deserialize(fs);
+                Dictionary<string, Conditioner> CDictionary = (Dictionary<string, Conditioner>)bf.Deserialize(fs);
+                Dictionary<string, Blender> BDictionary = (Dictionary<string, Blender>)bf.Deserialize(fs);
+                Dictionary<string, TV> TDictionary = (Dictionary<string, TV>)bf.Deserialize(fs);
 
-            LampDictionary.Add("1", factory.CreateLamp());
-            FridgeDictionary.Add("2", factory.CreateFridge());
-            HeaterDictionary.Add("3", factory.CreateHeater());
-            ConditionerDictionary.Add("4", factory.CreateConditioner());
-            BlenderDictionary.Add("5", factory.CreateBlender());
-            TVDictionary.Add("6", factory.CreateTV());
+                foreach (var Lamp in LDictionary)
+                {
+                    LampDictionary.Add(Lamp.Key, factory.CreateLamp(Lamp.Value.State, Lamp.Value.Light.MinLight, Lamp.Value.Light.MaxLight, Lamp.Value.Light.CurrentLight));
+                }
 
+                foreach (var Fridge in FDictionary)
+                {
+                        FridgeDictionary.Add(Fridge.Key, factory.CreateFridge(Fridge.Value.State, Fridge.Value.Temp.MinTemp, Fridge.Value.Temp.MaxTemp, Fridge.Value.Temp.CurrentTemp));
+                }
+
+                foreach (var Heater in HDictionary)
+                {
+                    HeaterDictionary.Add(Heater.Key, factory.CreateHeater(Heater.Value.State, Heater.Value.Temp.MinTemp, Heater.Value.Temp.MaxTemp, Heater.Value.Temp.CurrentTemp));
+                }
+
+                foreach (var Conditioner in CDictionary)
+                {
+                    ConditionerDictionary.Add(Conditioner.Key, factory.CreateConditioner(Conditioner.Value.State, Conditioner.Value.Temp.MinTemp, Conditioner.Value.Temp.MaxTemp, Conditioner.Value.Temp.CurrentTemp));
+                }
+
+                foreach (var Blender in BDictionary)
+                {
+                    BlenderDictionary.Add(Blender.Key, factory.CreateBlender(Blender.Value.State, Blender.Value.Mode.CurrentMode));
+                }
+
+                foreach (var TV in TDictionary)
+                {
+                    TVDictionary.Add(TV.Key, factory.CreateTV(TV.Value.State, TV.Value.Mode.CurrentMode, TV.Value.Channel.MinChannel, TV.Value.Channel.MaxChannel, TV.Value.Channel.CurrentChannel));
+                }
+            }
+        }
+        catch
+        {
+            LampDictionary.Add("1", factory.CreateLamp(false, 0, 100, 50));
+            FridgeDictionary.Add("2", factory.CreateFridge(false, -12, -1, -4));
+            HeaterDictionary.Add("3", factory.CreateHeater(false, 12, 40, 20));
+            ConditionerDictionary.Add("4", factory.CreateConditioner(false, 12, 40, 20));
+            BlenderDictionary.Add("5", factory.CreateBlender(false, 1));
+            TVDictionary.Add("6", factory.CreateTV(false, 1, 0, 100, 1));
+        }
             while (true)
             {
                 Console.Clear();
@@ -129,7 +175,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((BlenderModes)Blender.Value.BlenderMode.CurrentMode);
+                    Console.Write((BlenderModes)Blender.Value.Mode.CurrentMode);
                     Console.WriteLine(" mode");
                 }
 
@@ -144,7 +190,7 @@ namespace ConsoleApplication9
                     {
                         Console.Write(" off; ");
                     }
-                    Console.Write((TVModes)TV.Value.BlenderMode.CurrentMode);
+                    Console.Write((TVModes)TV.Value.Mode.CurrentMode);
                     Console.Write(" mode; channel ");
                     Console.WriteLine(TV.Value.Channel.CurrentChannel);
                 }
@@ -152,6 +198,16 @@ namespace ConsoleApplication9
                 string[] commands = Console.ReadLine().Split(' ');
                 if (commands[0].ToLower() == "exit" & commands.Length == 1)
                 {
+                    using (FileStream fs = new FileStream("SmartHouse.dat", FileMode.OpenOrCreate))
+                    {
+                        BinaryFormatter bf = new BinaryFormatter();
+                        bf.Serialize(fs, LampDictionary);
+                        bf.Serialize(fs, FridgeDictionary);
+                        bf.Serialize(fs, HeaterDictionary);
+                        bf.Serialize(fs, ConditionerDictionary);
+                        bf.Serialize(fs, BlenderDictionary);
+                        bf.Serialize(fs, TVDictionary);
+                    }
                     return;
                 }
                 if (commands.Length != 3)
@@ -164,7 +220,7 @@ namespace ConsoleApplication9
                     case "lamp":
                         if (commands[0].ToLower() == "add" && !LampDictionary.ContainsKey(commands[2]))
                         {
-                            LampDictionary.Add(commands[2],factory.CreateLamp());
+                            LampDictionary.Add(commands[2],factory.CreateLamp(false, 0, 100, 50));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && LampDictionary.ContainsKey(commands[2]))
@@ -212,7 +268,7 @@ namespace ConsoleApplication9
                     case "fridge":
                         if (commands[0].ToLower() == "add" && !FridgeDictionary.ContainsKey(commands[2]))
                         {
-                            FridgeDictionary.Add(commands[2],factory.CreateFridge());
+                            FridgeDictionary.Add(commands[2],factory.CreateFridge(false, -12, -1, -4));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && FridgeDictionary.ContainsKey(commands[2]))
@@ -260,7 +316,7 @@ namespace ConsoleApplication9
                     case "heater":
                         if (commands[0].ToLower() == "add" && !HeaterDictionary.ContainsKey(commands[2]))
                         {
-                            HeaterDictionary.Add(commands[2], factory.CreateHeater());
+                            HeaterDictionary.Add(commands[2], factory.CreateHeater(false, 12, 40, 20));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && HeaterDictionary.ContainsKey(commands[2]))
@@ -308,7 +364,7 @@ namespace ConsoleApplication9
                     case "conditioner":
                         if (commands[0].ToLower() == "add" && !ConditionerDictionary.ContainsKey(commands[2]))
                         {
-                            ConditionerDictionary.Add(commands[2], factory.CreateConditioner());
+                            ConditionerDictionary.Add(commands[2], factory.CreateConditioner(false, 12, 40, 20));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && ConditionerDictionary.ContainsKey(commands[2]))
@@ -356,7 +412,7 @@ namespace ConsoleApplication9
                     case "blender":
                         if (commands[0].ToLower() == "add" && !BlenderDictionary.ContainsKey(commands[2]))
                         {
-                            BlenderDictionary.Add(commands[2], factory.CreateBlender());
+                            BlenderDictionary.Add(commands[2], factory.CreateBlender(false, 1));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && BlenderDictionary.ContainsKey(commands[2]))
@@ -394,7 +450,7 @@ namespace ConsoleApplication9
                     case "tv":
                         if (commands[0].ToLower() == "add" && !TVDictionary.ContainsKey(commands[2]))
                         {
-                            TVDictionary.Add(commands[2],factory.CreateTV());
+                            TVDictionary.Add(commands[2],factory.CreateTV(false, 1, 0, 100, 1));
                             continue;
                         }
                         if (commands[0].ToLower() == "add" && TVDictionary.ContainsKey(commands[2]))

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Conditioner : OnOff, IOnOff, ITemp
     {
         public Conditioner() { }

@@ -5,20 +5,20 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Blender : OnOff, IModes, IOnOff
     {
         public Blender() { }
-        public Blender(bool state, int mode, BlenderMode Mode)
+        public Blender(bool state, BlenderMode Mode)
         {
             State = state;
-            BlenderMode = Mode;
-            BlenderMode.CurrentMode = mode;
+            this.Mode = Mode;
         }
-        public IMode BlenderMode { get; set; }
+        public IMode Mode { get; set; }
 
         public Boolean SetMode(string Argument)
         {
-            return BlenderMode.SetMode(Argument);
+            return Mode.SetMode(Argument);
         }
     }
 }

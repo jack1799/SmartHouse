@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Temperature : ITemperature
     {
         public Temperature(int MinTemp,int MaxTemp,int CurrentTemp)

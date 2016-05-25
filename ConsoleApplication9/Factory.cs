@@ -7,34 +7,34 @@ namespace ConsoleApplication9
 {
     public class Factory
     {
-        public virtual Lamp CreateLamp()
+        public virtual Lamp CreateLamp(bool State,int MinLight, int MaxLight, int CurrentLight)
         {
-            return new Lamp(false, new Light(0, 100, 50));
+            return new Lamp(State, new Light(MinLight, MaxLight, CurrentLight));
         }
 
-        public virtual Fridge CreateFridge()
+        public virtual Fridge CreateFridge(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Fridge(false, new Temperature(-12, -1, -4));
+            return new Fridge(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
         }
 
-        public virtual Heater CreateHeater()
+        public virtual Heater CreateHeater(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Heater(false, new Temperature(12, 40, 20));
+            return new Heater(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
         }
 
-        public virtual Conditioner CreateConditioner()
+        public virtual Conditioner CreateConditioner(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Conditioner(false, new Temperature(12, 40, 20));
+            return new Conditioner(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
         }
 
-        public virtual Blender CreateBlender()
+        public virtual Blender CreateBlender(bool State, int Mode)
         {
-            return new Blender(false, 1, new BlenderMode());
+            return new Blender(State, new BlenderMode(Mode));
         }
 
-        public virtual TV CreateTV()
+        public virtual TV CreateTV(bool State, int Mode, int MinChannel, int MaxChannel, int CurrentChannel)
         {
-            return new TV(false, 1, 1, new TVMode(), new Channel());
+            return new TV(State, new TVMode(Mode), new Channel(MinChannel, MaxChannel, CurrentChannel));
         }
     }
 }

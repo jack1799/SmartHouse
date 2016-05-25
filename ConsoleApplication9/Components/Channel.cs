@@ -5,8 +5,16 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Channel : IChannel
     {
+        public Channel() { }
+        public Channel(int MinChannel, int MaxChannel, int CurrentChannel)
+        {
+            this.MinChannel = MinChannel;
+            this.MaxChannel = MaxChannel;
+            this.CurrentChannel = CurrentChannel;
+        }
         public int CurrentChannel { get; set; }
         public int MaxChannel { get; set; }
         public int MinChannel { get; set; }

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
+    [Serializable]
     public class Fridge : OnOff, IOnOff, ITemp
     {
         public ITemperature Temp { get; set; }
