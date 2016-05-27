@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class BlenderMode : IMode
+    public class BlenderMode : IModeModule
     {
         public BlenderMode() { }
         public BlenderMode(int mode)

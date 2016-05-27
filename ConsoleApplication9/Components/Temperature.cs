@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Temp : ITemp
+    public class Temp : ITempModule
     {
         public Temp(int MinTemp,int MaxTemp,int CurrentTemp)
         {

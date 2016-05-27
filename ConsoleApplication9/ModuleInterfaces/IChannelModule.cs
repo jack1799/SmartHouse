@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IChannel
+    public interface IChannelModule
     {
         int CurrentChannel { get; set; }
         int MaxChannel { get; set; }

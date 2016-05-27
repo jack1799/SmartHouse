@@ -6,10 +6,10 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Heater : OnOff, IOnOff, ITemp1
+    public class Heater : OnOff, IOnOff, ITempDevice
     {
         public Heater() { }
-        public ITemp Temp { get; set; }
+        public ITempModule Temp { get; set; }
         public Heater(Boolean state, Temp Temp)
         {
             State = state;

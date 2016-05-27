@@ -6,10 +6,10 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Conditioner : OnOff, IOnOff, ITemp1
+    public class Conditioner : OnOff, IOnOff, ITempDevice
     {
         public Conditioner() { }
-        public ITemp Temp { get; set; }
+        public ITempModule Temp { get; set; }
         public Conditioner(Boolean state, Temp Temp)
         {
             State = state;

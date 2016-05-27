@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Light : ILight
+    public class Light : ILightModule
     {
         public Light(int MinLight, int MaxLight, int CurrentLight)
         {

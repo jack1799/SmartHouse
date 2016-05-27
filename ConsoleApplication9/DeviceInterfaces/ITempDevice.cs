@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IChannel1 : IParam1
+    public interface ITempDevice : IParamDevice
     {
-        IChannel Channel { get; set; }
+        ITempModule Temp { get; set; }
     }
 }

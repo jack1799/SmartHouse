@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class TVMode : IMode
+    public class TVMode : IModeModule
     {
         public TVMode() { }
         public TVMode(int mode)

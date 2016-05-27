@@ -5,10 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IParam1
+    public interface IChannelDevice : IParamDevice
     {
-        void Minus();
-        void Plus();
-        void Set(int Argument);
+        IChannelModule Channel { get; set; }
     }
 }

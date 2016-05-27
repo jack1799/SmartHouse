@@ -6,9 +6,9 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Fridge : OnOff, IOnOff, ITemp1
+    public class Fridge : OnOff, IOnOff, ITempDevice
     {
-        public ITemp Temp { get; set; }
+        public ITempModule Temp { get; set; }
         public Fridge() { }
         public Fridge(Boolean state, Temp Temp)
         {

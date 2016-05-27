@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Channel : IChannel
+    public class Channel : IChannelModule
     {
         public Channel() { }
         public Channel(int MinChannel, int MaxChannel, int CurrentChannel)

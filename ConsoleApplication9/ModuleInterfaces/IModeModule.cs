@@ -5,8 +5,10 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ITemp1 : IParam1
+    public interface IModeModule
     {
-        ITemp Temp { get; set; }
+        int CurrentMode { get; set; }
+
+        Boolean SetMode(string Argument);
     }
 }

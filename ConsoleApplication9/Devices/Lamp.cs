@@ -6,10 +6,10 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Lamp : OnOff, ILight1, IOnOff
+    public class Lamp : OnOff, ILightDevice, IOnOff
     {
         public Lamp() { }
-        public ILight Light { get; set; }
+        public ILightModule Light { get; set; }
         public Lamp(Boolean state, Light light)
         {
             State = state;

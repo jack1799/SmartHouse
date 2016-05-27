@@ -5,10 +5,9 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IMode
+    public interface ILightDevice : IParamDevice
     {
-        int CurrentMode { get; set; }
+        ILightModule Light { get; set; }
 
-        Boolean SetMode(string Argument);
     }
 }

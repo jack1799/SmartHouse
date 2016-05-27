@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Blender : OnOff, IModes, IOnOff
+    public class Blender : OnOff, IModeDevice, IOnOff
     {
         public Blender() { }
         public Blender(bool state, BlenderMode Mode)
@@ -14,7 +14,7 @@ namespace ConsoleApplication9
             State = state;
             this.Mode = Mode;
         }
-        public IMode Mode { get; set; }
+        public IModeModule Mode { get; set; }
 
         public Boolean SetMode(string Argument)
         {

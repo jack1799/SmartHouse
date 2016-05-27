@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class TV : OnOff, IModes, IChannel1, IOnOff
+    public class TV : OnOff, IModeDevice, IChannelDevice, IOnOff
     {
         public TV() { }
         public TV(Boolean state, TVMode Mode, Channel channel)
@@ -15,8 +15,8 @@ namespace ConsoleApplication9
             this.Mode = Mode;
             Channel = channel;
         }
-        public IMode Mode { get; set; }
-        public IChannel Channel { get; set; }
+        public IModeModule Mode { get; set; }
+        public IChannelModule Channel { get; set; }
 
         public void Set(int Argument)
         {

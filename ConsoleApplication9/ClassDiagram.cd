@@ -110,81 +110,81 @@
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.335" />
   </Class>
-  <Interface Name="ConsoleApplication9.IMode" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IModeModule" Collapsed="true">
     <Position X="7.25" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(2)\IMode.cs</FileName>
+      <FileName>ModuleInterfaces\IModeModule.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ITemp" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ITempModule" Collapsed="true">
     <Position X="3.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(2)\ITemperature.cs</FileName>
+      <FileName>ModuleInterfaces\ITempModule.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IChannel" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IChannelModule" Collapsed="true">
     <Position X="9.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>ASAAAAAAAAAIACABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
-      <FileName>Interfaces(2)\IChannel.cs</FileName>
+      <FileName>ModuleInterfaces\IChannelModule.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ILight" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ILightModule" Collapsed="true">
     <Position X="0.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(2)\ILight.cs</FileName>
+      <FileName>ModuleInterfaces\ILightModule.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IParam1" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IParamDevice" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(1)\IParam.cs</FileName>
+      <FileName>DeviceInterfaces\IParamDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IModes" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IModeDevice" Collapsed="true">
     <Position X="6.75" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(1)\IModes.cs</FileName>
+      <FileName>DeviceInterfaces\IModeDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ILight1" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ILightDevice" Collapsed="true">
     <Position X="0.5" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(1)\ILight1.cs</FileName>
+      <FileName>DeviceInterfaces\ILightDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ITemp1" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ITempDevice" Collapsed="true">
     <Position X="2" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>Interfaces(1)\ITemp.cs</FileName>
+      <FileName>DeviceInterfaces\ITempDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IChannel1" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IChannelDevice" Collapsed="true">
     <Position X="3.5" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces(1)\IChannel1.cs</FileName>
+      <FileName>DeviceInterfaces\IChannelDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ConsoleApplication9.IOnOff" Collapsed="true">
     <Position X="5.25" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIA=</HashCode>
-      <FileName>Interfaces(1)\IOnOff.cs</FileName>
+      <FileName>DeviceInterfaces\IOnOff.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IParam" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IParamModule" Collapsed="true">
     <Position X="2" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAABAAAEAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
-      <FileName>IMinMax.cs</FileName>
+      <FileName>ModuleInterfaces\IParamModule.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ConsoleApplication9.BlenderModes">

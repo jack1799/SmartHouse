@@ -5,11 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IParam
+    public interface IParamDevice
     {
-        int Max { get; }
-        int Min { get; }
-
         void Minus();
         void Plus();
         void Set(int Argument);
