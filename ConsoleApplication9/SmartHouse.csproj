@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMinMax.cs" />
     <Compile Include="Interfaces%281%29\IOnOff.cs" />
     <Compile Include="Devices\Blender.cs" />
     <Compile Include="Enums\BlenderModes.cs" />
