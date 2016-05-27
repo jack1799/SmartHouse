@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModuleInterfaces\IParamModule.cs" />
+    <Compile Include="ComponentInterfaces\IParamModule.cs" />
     <Compile Include="DeviceInterfaces\IOnOff.cs" />
     <Compile Include="Devices\Blender.cs" />
     <Compile Include="Enums\BlenderModes.cs" />
@@ -53,16 +53,16 @@
     <Compile Include="Factory\Factory.cs" />
     <Compile Include="DeviceInterfaces\IChannelDevice.cs" />
     <Compile Include="DeviceInterfaces\ILightDevice.cs" />
-    <Compile Include="ModuleInterfaces\ILightModule.cs" />
-    <Compile Include="ModuleInterfaces\IModeModule.cs" />
+    <Compile Include="ComponentInterfaces\ILightModule.cs" />
+    <Compile Include="ComponentInterfaces\IModeModule.cs" />
     <Compile Include="DeviceInterfaces\IModeDevice.cs" />
     <Compile Include="DeviceInterfaces\IParamDevice.cs" />
-    <Compile Include="ModuleInterfaces\ITempModule.cs" />
+    <Compile Include="ComponentInterfaces\ITempModule.cs" />
     <Compile Include="Devices\Conditioner.cs" />
     <Compile Include="Devices\Lamp.cs" />
     <Compile Include="Components\Light.cs" />
     <Compile Include="Components\BlenderMode.cs" />
-    <Compile Include="ModuleInterfaces\IChannelModule.cs" />
+    <Compile Include="ComponentInterfaces\IChannelModule.cs" />
     <Compile Include="Devices\OnOff.cs" />
     <Compile Include="DeviceInterfaces\ITempDevice.cs" />
     <Compile Include="Program.cs" />
