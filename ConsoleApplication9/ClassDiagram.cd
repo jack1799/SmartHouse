@@ -49,7 +49,7 @@
     <Lollipop Orientation="Left" Position="0.1" />
   </Class>
   <Class Name="ConsoleApplication9.Program" Collapsed="true">
-    <Position X="13.5" Y="0.5" Width="1.25" />
+    <Position X="11.25" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
@@ -96,11 +96,19 @@
     <Lollipop Orientation="Bottom" Position="0.221" />
   </Class>
   <Class Name="ConsoleApplication9.Factory" Collapsed="true">
-    <Position X="13.5" Y="1.25" Width="1.25" />
+    <Position X="11.25" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAABAAAAAIAAQAABAgAAA=</HashCode>
       <FileName>Factory\Factory.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApplication9.BlenderMode" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\BlenderMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.335" />
   </Class>
   <Interface Name="ConsoleApplication9.IMode" Collapsed="true">
     <Position X="7.25" Y="4.5" Width="1.25" />
@@ -180,14 +188,14 @@
     </TypeIdentifier>
   </Interface>
   <Enum Name="ConsoleApplication9.BlenderModes">
-    <Position X="11.75" Y="2" Width="1.5" />
+    <Position X="9.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\BlenderModes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="ConsoleApplication9.TVModes">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\TVModes.cs</FileName>

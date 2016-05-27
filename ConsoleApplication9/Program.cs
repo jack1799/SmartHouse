@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplication9
 {
@@ -16,17 +13,17 @@ namespace ConsoleApplication9
             Console.WriteLine();
             Console.WriteLine("Commands:");
             Console.WriteLine();
-            Console.WriteLine("\tadd [DeviceName] [Name]");
-            Console.WriteLine("\tdel [DeviceName] [Name]");
-            Console.WriteLine("\ton [DeviceName] [Name]");
-            Console.WriteLine("\toff [DeviceName] [Name]");
+            Console.WriteLine("\tadd [DeviceType] [DeviceName]");
+            Console.WriteLine("\tdel [DeviceType] [DeviceName]");
+            Console.WriteLine("\ton [DeviceType] [DeviceName]");
+            Console.WriteLine("\toff [DeviceType] [DeviceName]");
             Console.WriteLine();
             Console.WriteLine("Param: bright, temp, channel");
             Console.WriteLine();
-            Console.WriteLine("\tParam+ [DeviceName] [Name]");
-            Console.WriteLine("\tParam- [DeviceName] [Name]");
+            Console.WriteLine("\tParam+ [DeviceType] [DeviceName]");
+            Console.WriteLine("\tParam- [DeviceType] [DeviceName]");
             Console.WriteLine();
-            Console.WriteLine("Mode [DeviceName] [Name]");
+            Console.WriteLine("Mode [DeviceType] [DeviceName]");
             Console.WriteLine();
             Console.WriteLine("Modes for Blender");
             Console.WriteLine();
@@ -68,22 +65,22 @@ namespace ConsoleApplication9
 
                 foreach (var Lamp in LDictionary)
                 {
-                    LampDictionary.Add(Lamp.Key, factory.CreateLamp(Lamp.Value.State, Lamp.Value.Light.MinLight, Lamp.Value.Light.MaxLight, Lamp.Value.Light.CurrentLight));
+                    LampDictionary.Add(Lamp.Key, factory.CreateLamp(Lamp.Value.State, Lamp.Value.Light.Min, Lamp.Value.Light.Max, Lamp.Value.Light.CurrentLight));
                 }
 
                 foreach (var Fridge in FDictionary)
                 {
-                        FridgeDictionary.Add(Fridge.Key, factory.CreateFridge(Fridge.Value.State, Fridge.Value.Temp.MinTemp, Fridge.Value.Temp.MaxTemp, Fridge.Value.Temp.CurrentTemp));
+                        FridgeDictionary.Add(Fridge.Key, factory.CreateFridge(Fridge.Value.State, Fridge.Value.Temp.Min, Fridge.Value.Temp.Max, Fridge.Value.Temp.CurrentTemp));
                 }
 
                 foreach (var Heater in HDictionary)
                 {
-                    HeaterDictionary.Add(Heater.Key, factory.CreateHeater(Heater.Value.State, Heater.Value.Temp.MinTemp, Heater.Value.Temp.MaxTemp, Heater.Value.Temp.CurrentTemp));
+                    HeaterDictionary.Add(Heater.Key, factory.CreateHeater(Heater.Value.State, Heater.Value.Temp.Min, Heater.Value.Temp.Max, Heater.Value.Temp.CurrentTemp));
                 }
 
                 foreach (var Conditioner in CDictionary)
                 {
-                    ConditionerDictionary.Add(Conditioner.Key, factory.CreateConditioner(Conditioner.Value.State, Conditioner.Value.Temp.MinTemp, Conditioner.Value.Temp.MaxTemp, Conditioner.Value.Temp.CurrentTemp));
+                    ConditionerDictionary.Add(Conditioner.Key, factory.CreateConditioner(Conditioner.Value.State, Conditioner.Value.Temp.Min, Conditioner.Value.Temp.Max, Conditioner.Value.Temp.CurrentTemp));
                 }
 
                 foreach (var Blender in BDictionary)
