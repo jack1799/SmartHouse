@@ -6,11 +6,11 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Heater : OnOff, IOnOff, ITemp
+    public class Heater : OnOff, IOnOff, ITemp1
     {
         public Heater() { }
-        public ITemperature Temp { get; set; }
-        public Heater(Boolean state, Temperature Temp)
+        public ITemp Temp { get; set; }
+        public Heater(Boolean state, Temp Temp)
         {
             State = state;
             this.Temp = Temp;

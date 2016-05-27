@@ -63,7 +63,7 @@
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.107" />
   </Class>
-  <Class Name="ConsoleApplication9.Temperature" Collapsed="true">
+  <Class Name="ConsoleApplication9.Temp" Collapsed="true">
     <Position X="3.5" Y="5.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAgQAIAAAAAAwAAAAAAAAAAAAAA=</HashCode>
@@ -117,7 +117,7 @@
       <FileName>Interfaces(2)\IMode.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ITemperature" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ITemp" Collapsed="true">
     <Position X="3.5" Y="4.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -138,7 +138,7 @@
       <FileName>Interfaces(2)\ILight.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IParam" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IParam1" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>
@@ -159,7 +159,7 @@
       <FileName>Interfaces(1)\ILight1.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.ITemp" Collapsed="true">
+  <Interface Name="ConsoleApplication9.ITemp1" Collapsed="true">
     <Position X="2" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
@@ -180,7 +180,7 @@
       <FileName>Interfaces(1)\IOnOff.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ConsoleApplication9.IParametr" Collapsed="true">
+  <Interface Name="ConsoleApplication9.IParam" Collapsed="true">
     <Position X="2" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAABAAAEAAAAAABAAAAAAAAACAAAAAAAAA=</HashCode>

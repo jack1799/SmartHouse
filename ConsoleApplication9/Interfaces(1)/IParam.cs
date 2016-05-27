@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IParam
+    public interface IParam1
     {
         void Minus();
         void Plus();

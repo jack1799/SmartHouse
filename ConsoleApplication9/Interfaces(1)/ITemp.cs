@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ITemp : IParam
+    public interface ITemp1 : IParam1
     {
-        ITemperature Temp { get; set; }
+        ITemp Temp { get; set; }
     }
 }

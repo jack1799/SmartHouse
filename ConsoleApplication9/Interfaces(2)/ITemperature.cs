@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ITemperature : IParametr
+    public interface ITemp : IParam
     {
         int CurrentTemp { get; set; }
     }

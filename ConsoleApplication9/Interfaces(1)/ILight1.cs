@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ILight1 : IParam
+    public interface ILight1 : IParam1
     {
         ILight Light { get; set; }
 

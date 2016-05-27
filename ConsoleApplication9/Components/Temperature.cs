@@ -6,9 +6,9 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Temperature : ITemperature
+    public class Temp : ITemp
     {
-        public Temperature(int MinTemp,int MaxTemp,int CurrentTemp)
+        public Temp(int MinTemp,int MaxTemp,int CurrentTemp)
         {
             this.MinTemp = MinTemp;
             this.MaxTemp = MaxTemp;

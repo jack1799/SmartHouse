@@ -14,17 +14,17 @@ namespace ConsoleApplication9
 
         public virtual Fridge CreateFridge(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Fridge(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
+            return new Fridge(State, new Temp(MinTemp, MaxTemp, CurrentTemp));
         }
 
         public virtual Heater CreateHeater(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Heater(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
+            return new Heater(State, new Temp(MinTemp, MaxTemp, CurrentTemp));
         }
 
         public virtual Conditioner CreateConditioner(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
-            return new Conditioner(State, new Temperature(MinTemp, MaxTemp, CurrentTemp));
+            return new Conditioner(State, new Temp(MinTemp, MaxTemp, CurrentTemp));
         }
 
         public virtual Blender CreateBlender(bool State, int Mode)

@@ -6,11 +6,11 @@ using System.Text;
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Fridge : OnOff, IOnOff, ITemp
+    public class Fridge : OnOff, IOnOff, ITemp1
     {
-        public ITemperature Temp { get; set; }
+        public ITemp Temp { get; set; }
         public Fridge() { }
-        public Fridge(Boolean state, Temperature Temp)
+        public Fridge(Boolean state, Temp Temp)
         {
             State = state;
             this.Temp = Temp;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface IParametr
+    public interface IParam
     {
         int Max { get; }
         int Min { get; }

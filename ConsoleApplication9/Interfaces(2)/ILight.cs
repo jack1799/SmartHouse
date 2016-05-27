@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication9
 {
-    public interface ILight : IParametr
+    public interface ILight : IParam
     {
         int CurrentLight { get; set; }
     }
