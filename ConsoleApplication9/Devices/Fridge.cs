@@ -1,31 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Fridge : OnOff, IOnOff, ITempDevice
+    public class Fridge : Device, IDevice, ITempDevice
     {
         public ITempModule Temp { get; set; }
-        public Fridge() { }
-        public Fridge(Boolean state, Temp Temp)
+
+        public Fridge(bool state, Temp temp) : base(state)
         {
-            State = state;
-            this.Temp = Temp;
+            Temp = temp;
+        }
+
+        public override void Info(string name)
+        {
+            Console.Write("Fridge " + name);
+            if (state)
+            {
+                Console.Write(" on; ");
+            }
+            else
+            {
+                Console.Write(" off; ");
+            }
+            Console.WriteLine("temp " + Temp.CurrentTemp);
         }
         public void Plus()
         {
-            Temp.PlusTemp();
+            Temp.Plus();
         }
         public void Minus()
         {
-            Temp.MinusTemp();
+            Temp.Minus();
         }
-        public void Set(int Argument)
+        public void Set(int argument)
         {
-            Temp.SetTemp(Argument);
+            Temp.Set(argument);
         }
     }
 }

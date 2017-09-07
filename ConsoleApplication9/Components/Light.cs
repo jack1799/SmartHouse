@@ -1,44 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
     public class Light : ILightModule
     {
-        public Light(int MinLight, int MaxLight, int CurrentLight)
-        {
-            this.MaxLight = MaxLight;
-            this.MinLight = MinLight;
-            this.CurrentLight = CurrentLight;
-        }
-        public Light() { }
         public int CurrentLight { get; set; }
-        public int MaxLight { get; set; }
-        public int MinLight { get; set; }
+        public int Max { get; set; }
+        public int Min { get; set; }
 
-        public void MinusLight()
+        public Light(int min, int max, int currentLight)
+        {
+            Min = min;
+            Max = max;
+            CurrentLight = currentLight;
+        }
+
+        public void Minus()
         {
             --CurrentLight;
         }
-
-        public void PlusLight()
+        public void Plus()
         {
             ++CurrentLight;
         }
-
-        public void SetLight(int Argument)
+        public void Set(int argument)
         {
-            if ((Argument >= MinLight) & (Argument <= MaxLight))
+            if ((argument >= Min) && (argument <= Max))
             {
-                CurrentLight = Argument;
+                CurrentLight = argument;
             }
             else
             {
-                Console.WriteLine("MinLight="+MinLight+" MaxLight="+MaxLight);
-
+                Console.WriteLine("MinLight=" + Min + " MaxLight=" + Max);
+                Console.WriteLine("Press any key to continue");
+                Console.ReadKey();
             }
         }
     }

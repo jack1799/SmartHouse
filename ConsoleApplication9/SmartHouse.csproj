@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComponentInterfaces\IParamModule.cs" />
-    <Compile Include="DeviceInterfaces\IOnOff.cs" />
+    <Compile Include="DeviceInterfaces\IDevice.cs" />
     <Compile Include="Devices\Blender.cs" />
     <Compile Include="Enums\BlenderModes.cs" />
     <Compile Include="Components\Channel.cs" />
@@ -63,7 +63,7 @@
     <Compile Include="Components\Light.cs" />
     <Compile Include="Components\BlenderMode.cs" />
     <Compile Include="ComponentInterfaces\IChannelModule.cs" />
-    <Compile Include="Devices\OnOff.cs" />
+    <Compile Include="Devices\Device.cs" />
     <Compile Include="DeviceInterfaces\ITempDevice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

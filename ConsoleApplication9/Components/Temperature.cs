@@ -1,60 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
     public class Temp : ITempModule
     {
-        public Temp(int MinTemp,int MaxTemp,int CurrentTemp)
-        {
-            this.MinTemp = MinTemp;
-            this.MaxTemp = MaxTemp;
-            this.CurrentTemp = CurrentTemp;
-        }
         public int CurrentTemp { get; set; }
-        public int MaxTemp { get; set; }
-        public int MinTemp { get; set; }
+        public int Max { get; set; }
+        public int Min { get; set; }
 
-        public void MinusTemp()
+        public Temp(int min, int max, int currentTemp)
         {
-            if ((CurrentTemp -1) != MinTemp)
+            Min = min;
+            Max = max;
+            CurrentTemp = currentTemp;
+        }
+
+        public void Minus()
+        {
+            if ((CurrentTemp - 1) != Min)
             {
                 CurrentTemp -= 1;
             }
             else
             {
-                Console.WriteLine("MinTemp=" + MinTemp + " MaxTemp=" + MaxTemp);
+                Console.WriteLine("MinTemp=" + Min + " MaxTemp=" + Max);
                 Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }
         }
-
-        public void PlusTemp()
+        public void Plus()
         {
-            if ((CurrentTemp + 1) != MaxTemp)
+            if ((CurrentTemp + 1) != Max)
             {
                 CurrentTemp += 1;
             }
             else
             {
-                Console.WriteLine("MinTemp=" + MinTemp + " MaxTemp=" + MaxTemp);
+                Console.WriteLine("MinTemp=" + Min + " MaxTemp=" + Max);
                 Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }
         }
-
-        public void SetTemp(int Argument)
+        public void Set(int argument)
         {
-            if ((Argument >= MinTemp) & (Argument <= MaxTemp))
+            if ((argument >= Min) && (argument <= Max))
             {
-                CurrentTemp = Argument;
+                CurrentTemp = argument;
             }
             else
             {
-                Console.WriteLine("MinTemp=" + MinTemp + " MaxTemp=" + MaxTemp);
+                Console.WriteLine("MinTemp=" + Min + " MaxTemp=" + Max);
                 Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }

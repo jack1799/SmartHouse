@@ -1,31 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
     public class BlenderMode : IModeModule
     {
-        public BlenderMode() { }
-        public BlenderMode(int mode)
+        public Enum CurrentMode { get; set; } = new BlenderModes();
+        
+        public BlenderMode(BlenderModes mode)
         {
             CurrentMode = mode;
         }
-        public int CurrentMode { get; set; }
-        public Boolean SetMode(String Argument)
+
+        public bool SetMode(string argument)
         {
-            switch (Argument.ToLower())
+            switch (argument.ToLower())
             {
                 case "normal":
-                    CurrentMode = 1;
-                    return false;
-                case "super":
-                    CurrentMode = 2;
-                    return false;
-                default:
+                    CurrentMode = BlenderModes.Normal;
                     return true;
+                case "super":
+                    CurrentMode = BlenderModes.Super;
+                    return true;
+                default:
+                    return false;
             }
         }
     }

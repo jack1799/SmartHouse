@@ -1,31 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Lamp : OnOff, ILightDevice, IOnOff
+    public class Lamp : Device, ILightDevice, IDevice
     {
-        public Lamp() { }
         public ILightModule Light { get; set; }
-        public Lamp(Boolean state, Light light)
+
+        public Lamp(bool state, Light light) : base(state)
         {
-            State = state;
             Light = light;
+        }
+
+        public override void Info(string name)
+        {
+            Console.Write("Lamp " + name);
+            if (state)
+            {
+                Console.Write(" on; ");
+            }
+            else
+            {
+                Console.Write(" off; ");
+            }
+            Console.WriteLine("bright " + Light.CurrentLight);
         }
         public void Plus()
         {
-            Light.PlusLight();
+            Light.Plus();
         }
         public void Minus()
         {
-            Light.MinusLight();
+            Light.Minus();
         }
-        public void Set(int Argument)
+        public void Set(int argument)
         {
-            Light.SetLight(Argument);
+            Light.Set(argument);
         }
     }
 }

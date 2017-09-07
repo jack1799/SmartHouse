@@ -1,31 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
-    public class Heater : OnOff, IOnOff, ITempDevice
+    public class Heater : Device, IDevice, ITempDevice
     {
-        public Heater() { }
         public ITempModule Temp { get; set; }
-        public Heater(Boolean state, Temp Temp)
+
+        public Heater(bool state, Temp temp) : base(state)
         {
-            State = state;
-            this.Temp = Temp;
+            Temp = temp;
+        }
+
+        public override void Info(string name)
+        {
+            Console.Write("Heater " + name);
+            if (state)
+            {
+                Console.Write(" on; ");
+            }
+            else
+            {
+                Console.Write(" off; ");
+            }
+            Console.WriteLine("temp " + Temp.CurrentTemp);
         }
         public void Plus()
         {
-            Temp.PlusTemp();
+            Temp.Plus();
         }
         public void Minus()
         {
-            Temp.MinusTemp();
+            Temp.Minus();
         }
-        public void Set(int Argument)
+        public void Set(int argument)
         {
-            Temp.SetTemp(Argument);
+            Temp.Set(argument);
         }
     }
 }

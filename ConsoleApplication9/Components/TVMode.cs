@@ -1,34 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
     public class TVMode : IModeModule
     {
-        public TVMode() { }
-        public TVMode(int mode)
+        public Enum CurrentMode { get; set; } = new TVModes();
+
+        public TVMode(TVModes mode)
         {
             CurrentMode = mode;
         }
-        public int CurrentMode { get; set; }
-        public Boolean SetMode(String Argument)
+
+        public bool SetMode(string argument)
         {
-            switch (Argument.ToLower())
+            switch (argument.ToLower())
             {
                 case "normal":
-                    CurrentMode = 1;
-                    return false;
-                case "intensified":
-                    CurrentMode = 2;
-                    return false;
-                case "super":
-                    CurrentMode = 3;
-                    return false;
-                default:
+                    CurrentMode = TVModes.Normal;
                     return true;
+                case "intensified":
+                    CurrentMode = TVModes.Intensified;
+                    return true;
+                case "super":
+                    CurrentMode = TVModes.Super;
+                    return true;
+                default:
+                    return false;
             }
         }
     }

@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication9
 {
     [Serializable]
     public class Channel : IChannelModule
     {
-        public Channel() { }
-        public Channel(int MinChannel, int MaxChannel, int CurrentChannel)
-        {
-            this.MinChannel = MinChannel;
-            this.MaxChannel = MaxChannel;
-            this.CurrentChannel = CurrentChannel;
-        }
         public int CurrentChannel { get; set; }
         public int MaxChannel { get; set; }
         public int MinChannel { get; set; }
+
+        public Channel(int minChannel, int maxChannel, int currentChannel)
+        {
+            MinChannel = minChannel;
+            MaxChannel = maxChannel;
+            CurrentChannel = currentChannel;
+        }
 
         public void NextChannel()
         {
@@ -47,11 +44,11 @@ namespace ConsoleApplication9
             }
         }
 
-        public void SetChannel(int Argument)
+        public void SetChannel(int argument)
         {
-            if ((Argument >= MinChannel) & (Argument <= MaxChannel))
+            if ((argument >= MinChannel) & (argument <= MaxChannel))
             {
-                CurrentChannel = Argument;
+                CurrentChannel = argument;
             }
             else
             {
