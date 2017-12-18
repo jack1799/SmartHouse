@@ -84,11 +84,11 @@ namespace ConsoleApplication9
             catch (Exception)
             {
                 lampDictionary.Add("1", factory.CreateLamp());
-                fridgeDictionary.Add("2", factory.CreateFridge(false, -12, -1, -4));
-                heaterDictionary.Add("3", factory.CreateHeater(false, 12, 40, 20));
-                conditionerDictionary.Add("4", factory.CreateConditioner(false, 12, 40, 20));
-                blenderDictionary.Add("5", factory.CreateBlender(false, BlenderModes.Normal));
-                tvDictionary.Add("6", factory.CreateTV(false, TVModes.Normal, 0, 100, 1));
+                fridgeDictionary.Add("2", factory.CreateFridge());
+                heaterDictionary.Add("3", factory.CreateHeater());
+                conditionerDictionary.Add("4", factory.CreateConditioner());
+                blenderDictionary.Add("5", factory.CreateBlender());
+                tvDictionary.Add("6", factory.CreateTV());
             }
         }
         private static void CreateFile()
