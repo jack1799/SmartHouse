@@ -22,7 +22,6 @@ namespace ConsoleApplication9
             while (true)
             {
                 Console.Clear();
-
                 OutputText();
 
                 string[] commands = Console.ReadLine().Split(' ');
@@ -84,7 +83,7 @@ namespace ConsoleApplication9
             }
             catch (Exception)
             {
-                lampDictionary.Add("1", factory.CreateLamp(false, 0, 100, 50));
+                lampDictionary.Add("1", factory.CreateLamp());
                 fridgeDictionary.Add("2", factory.CreateFridge(false, -12, -1, -4));
                 heaterDictionary.Add("3", factory.CreateHeater(false, 12, 40, 20));
                 conditionerDictionary.Add("4", factory.CreateConditioner(false, 12, 40, 20));
@@ -180,7 +179,7 @@ namespace ConsoleApplication9
             {
                 if (!lampDictionary.ContainsKey(commands[2]))
                 {
-                    lampDictionary.Add(commands[2], factory.CreateLamp(false, 0, 100, 50));
+                    lampDictionary.Add(commands[2], factory.CreateLamp());
                 }
                 else
                 {

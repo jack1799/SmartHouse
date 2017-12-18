@@ -6,7 +6,12 @@
         {
             return new Lamp(State, new Light(MinLight, MaxLight, CurrentLight));
         }
-        
+        public virtual Lamp CreateLamp()
+        {
+            return CreateLamp(false, 0, 100, 50);
+        }
+
+
         public virtual Fridge CreateFridge(bool State, int MinTemp, int MaxTemp, int CurrentTemp)
         {
             return new Fridge(State, new Temp(MinTemp, MaxTemp, CurrentTemp));
